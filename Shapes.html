@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+ 
+ 
+ <head>
+	<title> Homework1 Shapes </title>
+	<script src= "http://d3js.org/d3.v3.min.js"></script>
+	
+	</head>
+	
+	<body>
+	<script>
+	
+	d3.select("body")
+	.append("p")
+	.style("color","blue")
+	.text (" Hello,World. My name is Jennifer Payano, this is Homework 1!");
+	
+	var shapes = d3.select("body")
+				.append("svg")
+				.attr("width",300)
+				.attr("height",300);
+				
+	var circle = shapes.append("circle")
+				.attr("cx", 250) 
+				.attr("cy",250)
+				.attr("r",50)
+				.attr("fill","purple");
+				
+	var rect = shapes.append("rect")
+				.attr("width", 100)
+				.attr("height", 60)
+				.attr("stroke","orange")
+				.attr("stroke-width",5)
+				.attr("fill","yellow");
+				
+	var line= shapes.append("line")
+				.attr ("x1",0)
+				.attr("y1", 100)
+				.attr("x2",300)
+				.attr("y2", 300)
+				.attr("stroke", "green")
+				.attr("stroke-width",5);
+	var poly = shapes.append("polygon")
+				.attr("fill","blue")
+				.attr("stroke","red")
+				.attr("stroke-width",3)
+				.attr("points","100,50,250,145,300,60");
+	
+				
+				
+
+					
+
+	
+	
+	</script>
+	</body>
+	</html>
